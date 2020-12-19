@@ -1,0 +1,67 @@
+<html>
+	<head>
+		<style>
+			*{margin:0;padding:0;box-sizing:border-box;}
+			.video{
+				position:fixed;
+				botton:0;
+				left:0;
+				min-height:100%;
+				min-width:100%;
+				z-index:1;
+			}
+			.login{
+				z-index:2;
+				position:absolute;
+				width:80%;
+				max-width:600px;
+				padding:40px;
+				background-color:white;
+				top:50%;
+				left:50%;
+				transform:translate(-50%,-50%);
+			}
+			.login h3{
+				text-align:center;
+				padding: 8px 0;
+			}
+			
+			.login input[type=text]{
+				width:100%;
+				height30px;
+				border:1px solid #ccc;
+				margin-bottom:10px;
+			
+			}
+			
+			.login input[type=submit]{
+				width:100%;
+				height30px;
+				background-color:#333;
+				color:white;
+				font-size:10px;
+				cursor:pointer;			
+				
+			}
+		</style>
+	</head>
+	<body>
+		
+		<video autoplay muted Loop class="video">
+		  <source src="universe.mp4" type="video/mp4">
+		</video>
+		
+		<div  class="login">
+			<h3>Faça seu Login</h3>
+			<form>
+				
+				<input type="text">
+				<input type="text">
+				<input type="submit">
+				
+			</form>
+
+		
+		</div>
+	</body>
+</html>
